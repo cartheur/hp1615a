@@ -2,6 +2,11 @@
 
 This folder is organized so an agent can reason about HP 1615A measurement behavior, front-end loading, probe wiring, self-tests, adjustments, and repair flow without rereading raw PDFs each time.
 
+## Recommended Starting Point
+
+- Start with `docs-classified/agent-repair-playbook.md` for symptom-driven diagnosis.
+- Use the per-document Markdown files below as source material and citation anchors.
+
 ## Document Registry
 
 ### HP 1615A Operating And Service Manual
@@ -44,6 +49,7 @@ This folder is organized so an agent can reason about HP 1615A measurement behav
 
 - Use the `1615A` manual first when the question is about analyzer behavior, verification, or internal faults.
 - Use the `10248C` note first when the question is really about the measurement connection itself: probe loading, thresholding, grounding, or glitch integrity.
+- Use `docs-classified/agent-repair-playbook.md` first when the question begins with a symptom rather than a known failing subsystem.
 - When OCR text is ambiguous, cite the page number from the Markdown and inspect the matching page image in the sibling `figures/` directory.
 - For DUT diagnosis, separate instrument faults from measurement-condition faults:
   - instrument fault candidates usually live in `Sections IV`, `V`, and `VIII` of the `1615A` manual
